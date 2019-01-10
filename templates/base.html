@@ -17,6 +17,14 @@
   <!-- D3 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
 
+  <!-- For API -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+
   <!-- Bootsrap JS  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
@@ -114,35 +122,42 @@
 
 
   {% endblock %}
+
+<!--   
+  /////////////  Tinku code /////////////////
+  //////////////////////////////////////
+  //////////////////////////////////////  -->
+
+
   <!-- API -->
 
-<div class="container" id="mainContainer">
-		<!-- <div class="row" id="topRow">
+  <div class="container" id="mainContainer">
+		<div class="row" id="topRow">
 			<!-- <div class="col-md-12"> -->
-				<!-- <div class="panel panel-default">
-				<!-- <div class="col-md-6">	
-				</div> -->
-				<!-- <div class="col-md-6">
-        </div> -->
-				<!-- </div> --> 
+				<div class="panel panel-default">
+				<div class="col-md-6">	
+				</div>
+				<div class="col-md-6">
+					</div>
+				</div>
 			<!-- </div> -->
-		<!-- </div> --> 
-  <div class="row">
-    <div class="col-md-3">
-      <div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3>Search for Recipes</h3>
-          </div>
-          <div class="panel-body">
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3>Search for Recipes</h3>
+						</div>
+						<div class="panel-body">
 							<form>
 								<div class="form-group">
 									<!-- <input type="search" class="form-control" id="ingredientsSearchBar" placeholder="Ex. Kale"> -->
 									<button type="submit" class="btn btn-default" id="ingredientsSearchBtn">Search</button>
 								</div>
 							</form>
-          </div>	
-      </div>
+						</div>	
+					</div>
 					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 					  <div class="panel panel-default">
 					    <div class="panel-heading" role="tab" id="headingOne">
@@ -151,26 +166,31 @@
 					      </h4>
 							</div>
 							<div class="panel-body" id="ingredients-list"></div>
-					    </div>
 					  </div>
-				  </div>
-          <div>
-          </div>
-    </div>
-    <div class="col-md-9">
-      <div id="recipeDisplay" class="col-md-12">
-      </div>
-    </div>
-</div>
-		<!-- <div class="row">
+					</div>
+				</div>
+				<div>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div id="recipeDisplay" class="col-md-12">
+        		</div>
+			</div>
+		</div>
+		<div class="row">
 			<div class="col-md-12">
 
 				<div class="panel panel-default"> 
 				</div>
 
 			</div>
-		</div> -->
-	<!-- </div> -->
+		</div>
+	</div>
+<!--   
+  /////////////  Tinku code /////////////////
+  //////////////////////////////////////
+  //////////////////////////////////////  -->
+
   <!-- About -->
   <section id="about">
     <div class="container">
@@ -349,7 +369,7 @@
 
     <script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
     <script type="text/javascript" src="{{url_for('static', filename='js/app.js')}}"></script>
-    <script type="text/javascript" src="{{url_for('static', filename='js_api/app_api.js')}}"></script>
+    <!-- <script type="text/javascript" src="{{url_for('static', filename='js_api/app_api.js')}}"></script> -->
 </body>
 
 </html>

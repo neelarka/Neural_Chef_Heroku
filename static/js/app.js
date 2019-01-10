@@ -60,6 +60,10 @@ $(function () {
                             console.log(data.predictions[i][1]);
                             list.push(data.predictions[i][1]);
                         }
+                   
+                    //////////////  Tinku code /////////////////
+                    //////////////////////////////////////
+                    //////////////////////////////////////    
                     console.log(list)
                     var items = list;
                     var SearchBtn = d3.select("#ingredientsSearchBtn");
@@ -104,11 +108,13 @@ $(function () {
                                 caloriesP.text(calories + ' Calories');
                                 recipeCaption.append(caloriesP)
                                 recipeImage.attr('src', results[i].recipe.image);
-                                recipeDiv.addClass('thumbnail col-md-3 recipe');
+                                //recipeDiv.addClass('row');
+                                // recipeDiv.addClass('row');
+                                recipeDiv.addClass('thumbnail col-md-4 recipe');
                                 recipeDiv.append(recipeImage);
                                 recipeDiv.addClass('image-center');
                                 recipeTitle.push(results[i]["recipe"]["label"])
-                                //recipeCaption.append($('<div>').text(results[i].recipe.label).addClass('recipeName'));
+                                // recipeCaption.append($('<div>').text(results[i].recipe.label).addClass('recipeName')); */}
                                 recipeCaption.addClass('text-center');
                                 recipeDiv.append(recipeCaption);
                                 recipeBtnDiv.append($('<a>').append($('<button>').addClass('btn recipeBtn').text('Go to recipe')).attr('href',results[i].recipe.url).attr('target','_blank'));
@@ -121,7 +127,12 @@ $(function () {
                         };
                         displayRecipes();
                     }
+                   /////////////  Tinku code /////////////////
+                    //////////////////////////////////////
+                    ////////////////////////////////////// 
                     },
+
+
                 });
             }
         }
